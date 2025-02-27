@@ -1,55 +1,83 @@
 body {
-   
+    background-color: greenyellow;
+}
+
 header {
     background-color: green;
     text-transform: uppercase;
-   
     border-radius: 10px;
-   
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
 }
+
 a {
-    color:black;
-  
+    color: black;
     border: 4px solid black;
     border-radius: 8px;
     margin: 5px;
-    white-space: nowrap; /* chatgpt kód */
-    display: inline-block; /*chatgpt kód */
-      
+    padding: 5px;
+    white-space: nowrap; 
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: greenyellow;
 }
 
 nav {
     margin-bottom: 10px;
-
+    text-align: center;
 }
+
 * {
     box-sizing: border-box;
 }
+
 img {
- 
     border: 5px solid black;
     border-radius: 10px;
+    width: 100%;
 }
+
 section {
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 5px solid black;
     border-radius: 15px;
     background-color: green;
 }
+
 p {
     border: 5px solid black;
     border-radius: 10px;
     background-color: greenyellow;
+    padding: 5px;
 }
+
 article {
-    
+    display: grid;
     gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
 }
+
+@media screen and (max-width: 800px) {
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+}
+
 #bekezdes_footer {
     background-color: green;
     border: 5px solid black;
     font-size: large;
+    text-align: center;
+    padding: 10px;
 }
-
-
